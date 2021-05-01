@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <style>
+        header {
+            text-align: center;
+            background-color: wheat;
+        }
+        footer {
+            flex: 0 0 content;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color:wheat;
+        }
+
+        main {
+            display: flex;
+            background-color: tan;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+        
+        .right-part {
+            width: 60%;
+        }
+
+        aside {
+            width: 40%;
+            background-color: thistle;
+            text-align: center;
+        }
+
+        body {
+            display: flex;
+            flex-flow: column;
+            min-height: 100vh
+        }
+
+        aside {
+            width: 30%;
+            background-color: thistle;
+            text-align: center;
+        }
+
+        section {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-content: flex-end;
+            align-items: center;
+        }
+
+        .sectionelement {
+            background-color:lightpink;
+            padding: 10px;
+            width: 40%;
+            min-height: 10vh;
+            margin-inline: 25px;
+        }
+        
+        .sectionelement_1 {
+            background-color:lightpink;
+            padding: 10px;
+            width: 95%;
+            min-height: 10vh;
+        }
+
+        .footerelement {
+            background-color: violet;
+            padding: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Шапка страницы</header>
+        <main>
+        <div class="right-part">
+            <h4>Основная часть</h4>
+            <section>
+            <p class="sectionelement">Еще 1</p>
+            <p class="sectionelement">Еще 2</p>
+            <p class="sectionelement_1">Еще 3</p>
+            </section>
+        </div>
+        <aside>Боковая область</aside>
+        </main>
+    </div>
+    <footer>
+        <p class="footerelement">Секция футера 1</p>
+        <p class="footerelement">Секция футера 2</p>
+        <p class="footerelement">Секция футера 3</p>
+        <p class="footerelement">Секция футера 4</p>
+    </footer>
+</body>
+</html>
